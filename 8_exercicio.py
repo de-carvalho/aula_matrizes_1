@@ -4,8 +4,8 @@ from random import randint
 
 matriz_a = []
 matriz_b = []
-m, n = 3, 3  # Dimensões da matriz A
-p, q = 3, 3  # Dimensões da matriz B
+m, n = 3, 3
+p, q = 3, 3
 
 if m != p or n != q:
     print("A soma das matrizes não é possível, pois as dimensões não coincidem.")
