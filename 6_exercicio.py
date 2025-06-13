@@ -1,23 +1,10 @@
-# Elabore um programa em python que gere uma matriz 5x5
-# e calcule e mostre a diagonal principal e a secundária da matriz.
-from random import randint
-
-matriz = []
+a = [0]*5
 
 for i in range(5):
-    linha = []
+    a[i]=[0]*5
     for j in range(5):
-        valor = randint(1, 50)
-        linha.append(valor)
-    matriz.append(linha)
-print("Matriz:")
-for  linha in matriz:
-    print(linha)
-    
-print("Diagonal principal:")
+        if (i==j or i+j==4):
+            a[i][j] = 1
+print('Matriz gerada:')
 for i in range(5):
-    print(matriz[i][i], end=' ')
-    
-print("\nDiagonal secundária:")
-for i in range(5):
-    print(matriz[i][4-i], end=' ')
+    print(a[i])
